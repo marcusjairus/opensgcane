@@ -1,0 +1,30 @@
+{
+  "name": "opensgcane",
+  "version": "0.1.0",
+  "description": "A Singapore cane for Claude Code. Rattan end whacks slackers; feather end dusts messy code.",
+  "main": "src/main.js",
+  "bin": {
+    "opensgcane": "bin/opensgcane.js"
+  },
+  "scripts": {
+    "start": "node bin/opensgcane.js",
+    "dev": "node bin/opensgcane.js"
+  },
+  "keywords": [
+    "claude-code",
+    "cane",
+    "rotan",
+    "feather-duster",
+    "singapore",
+    "electron",
+    "tray"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^32.2.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,44 @@
+/* -------- Swing Keyframes -------- */
+/* Direction: right → left, mostly horizontal sweep.                      */
+/* Cane pivots at its tip (SVG bottom) — translate(-50%, -100%).          */
+/* Duster pivots at its hook (SVG top) — translate(-50%, 0%).             */
+/* Rotation centred on 180° for cane, 0° for duster (both = "upright").   */
+
+@keyframes whack {
+  0%   { transform: translate(-50%, -100%) translate( 80vw, -15vh) rotate(225deg); opacity: 0; }
+  15%  { transform: translate(-50%, -100%) translate( 55vw,  -8vh) rotate(205deg); opacity: 1; }
+  50%  { transform: translate(-50%, -100%) translate(  0vw,   0vh) rotate(180deg); opacity: 1; }
+  85%  { transform: translate(-50%, -100%) translate(-55vw,   8vh) rotate(155deg); opacity: .6; }
+  100% { transform: translate(-50%, -100%) translate(-80vw,  15vh) rotate(135deg); opacity: 0; }
+}
+
+@keyframes dust {
+  0%   { transform: translate(-50%, 0%) translate( 60vw, -12vh) rotate( 45deg); opacity: 0; }
+  20%  { transform: translate(-50%, 0%) translate( 40vw,  -6vh) rotate( 25deg); opacity: 1; }
+  50%  { transform: translate(-50%, 0%) translate(  0vw,   0vh) rotate(  0deg); opacity: 1; }
+  80%  { transform: translate(-50%, 0%) translate(-40vw,   6vh) rotate(-25deg); opacity: .7; }
+  100% { transform: translate(-50%, 0%) translate(-60vw,  12vh) rotate(-45deg); opacity: 0; }
+}
+
+@keyframes flash-hit {
+  0%   { transform: translate(-50%, -50%) scale(.2); opacity: 0; }
+  40%  { transform: translate(-50%, -50%) scale(1.2); opacity: 1; }
+  100% { transform: translate(-50%, -50%) scale(1.8); opacity: 0; }
+}
+
+@keyframes dust-puff {
+  0%   { transform: translate(-50%, -50%) scale(.2); opacity: 0; }
+  25%  { transform: translate(-50%, -50%) scale(1.0); opacity: .95; }
+  100% { transform: translate(-50%, -50%) scale(2.4); opacity: 0; }
+}
+
+#tool.swing[data-mode="cane"] {
+  transform-origin: 50% 100%;
+  animation: whack 820ms cubic-bezier(.35,.05,.25,1);
+}
+#tool.swing[data-mode="feather"] {
+  transform-origin: 50% 0%;
+  animation: dust 960ms cubic-bezier(.3,.1,.25,1);
+}
+#flash.hit     { animation: flash-hit 340ms ease-out forwards; }
+#dust-poof.puff { animation: dust-puff 720ms ease-out forwards; }
