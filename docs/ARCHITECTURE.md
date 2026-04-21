@@ -39,7 +39,7 @@ src/
     utils/
       config-util/index.js     load/save user prefs
 assets/
-  cane-red.svg, cane-yellow.svg, cane-blue.svg
+  cane-red.svg, cane-yellow.svg, cane-blue.svg, cane-green.svg
 ~~~
 
 ## Data flow on a single "fire"

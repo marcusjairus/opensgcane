@@ -12,5 +12,5 @@ Initial scaffold.
 - **Rattan end (whack):** Ctrl-C + random Singlish motivational line.
 - **Feather end (clean):** random cleanup prompt, no interrupt.
 - Mode and colour selectable from the tray menu; saved to `config.json`.
-- Three primary cane colours: red, yellow, blue.
+- Three primary cane colours: red, yellow, blue — plus a special edition green.
 - Cross-platform keystroke support: macOS (`osascript`), Linux (`xdotool`), Windows (PowerShell SendKeys).

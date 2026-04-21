@@ -48,7 +48,7 @@ sudo apt install xdotool
 1. Run `npm start` — a tiny cane icon appears in your tray / menubar. It is watching.
 2. Click the icon. A menu opens. Choose your weapon:
    - **End:** Rattan (whack) or Feather (dust)
-   - **Colour:** Red 🔴, Yellow 🟡, Blue 🔵 (purely aesthetic — the cane hits the same regardless, sorry)
+   - **Colour:** three primary canes — Red 🔴, Yellow 🟡, Blue 🔵 — plus a **special edition Green 🟢**. Purely aesthetic. The cane hits the same regardless, sorry.
 3. Make sure the terminal running Claude Code is the **focused window**. Very important. Otherwise you'll cane your browser. Awkward.
 4. Click **"Cane him!"** or **"Dust him!"**.
 5. Watch the cane fly. Listen for the *thwack*. Feel the catharsis.

@@ -35,7 +35,7 @@ Sample lines (see `src/app/actions/feather/messages.js` to edit):
 
 <!-- <subsection-updated last-updated="2026-04-20T00:00:00Z" updated-by="Claude Opus 4.7" /> -->
 
-Three primary colours: **red**, **yellow**, **blue**. Pick from the tray menu under **Cane colour**. The selection is saved between runs and swaps the SVG used in the swing animation.
+Three primary colours — **red**, **yellow**, **blue** — plus a **special edition green**. Pick from the tray menu under **Cane colour**, or cycle with `Ctrl+Alt+H` (macOS) / `Ctrl+Alt+Shift+H` (Windows/Linux) (red → yellow → blue → green → red). The selection is saved between runs and swaps the SVG used in the swing animation.
 
 Add more colours by dropping `cane-<name>.svg` into `assets/` and adding the name to the `COLORS` array in `src/app/tray/build-menu.js`.
 
